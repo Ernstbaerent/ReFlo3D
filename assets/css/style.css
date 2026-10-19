@@ -366,10 +366,26 @@ strong { font-weight: 700; }
 .burger[aria-expanded="true"] .burger-lines span:nth-child(2) { opacity: 0; }
 .burger[aria-expanded="true"] .burger-lines span:nth-child(3) { top: 7px; transform: rotate(-45deg); }
 
+/* Instagram/TikTok im Header: Farbe folgt dem Header-Zustand (hell über dem Hero, dunkel beim Scrollen) */
+.header-actions { display: flex; align-items: center; gap: 4px; }
+.header-social {
+  display: inline-grid; place-items: center;
+  width: 44px; height: 44px; flex: none;
+  border-radius: 999px;
+  color: inherit;
+  transition: background-color .25s, transform .3s var(--ease-out);
+}
+.header-social .icon { width: 20px; height: 20px; }
+.header-social:hover { background: rgba(127, 120, 112, .18); transform: translateY(-1px); }
+.header-social:focus-visible { border-radius: 999px; }
+.header-shop { display: none; }
+.menu-open .header-social { visibility: hidden; }
+
 @media (min-width: 900px) {
   :root { --header-h: 80px; }
-  .nav { display: flex; align-items: center; gap: clamp(20px, 3vw, 40px); }
+  .nav { display: flex; align-items: center; margin-left: auto; margin-right: clamp(12px, 2vw, 28px); }
   .burger { display: none; }
+  .header-shop { display: inline-flex; margin-left: 10px; }
 }
 
 /* Mobiles Vollbild-Menü */
