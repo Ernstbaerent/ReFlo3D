@@ -22,12 +22,14 @@ robots.txt, sitemap.xml, CNAME, .nojekyll
 
 ## Bilder und Video austauschen
 
-Die mitgelieferten Bilder sind Platzhalter (unten links mit „Platzhalter“ beschriftet).
-Einfach durch echte Fotos mit **gleichem Dateinamen** ersetzen:
+Hero, Herbst, Winter, Galerie 1–4 und das OG-Bild sind echte Produktfotos. Noch gezeichnete
+Platzhalter sind `kategorie-wohnen.jpg`, `galerie-5.jpg`, `galerie-6.jpg`, `video-poster.jpg`
+und das Video. Bilder einfach durch Fotos mit **gleichem Dateinamen** ersetzen
+(Metadaten wie EXIF/GPS vorher entfernen):
 
 | Datei | Format |
 | --- | --- |
-| `assets/img/hero.jpg` | 2000 × 1333 (quer, Motiv eher rechts) |
+| `assets/img/hero.jpg` | 1620 × 1080 oder größer (3:2, Motiv eher rechts) |
 | `assets/img/video-poster.jpg` | 1080 × 1350 (4:5), erstes/schönstes Bild des Videos |
 | `assets/img/kategorie-herbst.jpg`, `-winter.jpg`, `-wohnen.jpg` | 1200 × 960 (5:4) |
 | `assets/img/galerie-1.jpg` … `galerie-6.jpg` | 900 × 900 (quadratisch) |

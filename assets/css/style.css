@@ -439,6 +439,10 @@ strong { font-weight: 700; }
 .hero-media img {
   width: 100%; height: 100%; object-fit: cover; object-position: 72% 50%;
 }
+/* Hochformat: Ausschnitt weiter rechts, damit die Geister ganz im Bild sind */
+@media (max-aspect-ratio: 1/1) {
+  .hero-media img { object-position: 93% 50%; }
+}
 /* Dunkler Verlauf: sichert Kontrast für den Text auf jedem späteren Foto */
 .hero::before {
   content: ""; position: absolute; inset: 0; z-index: -2;
